@@ -1,5 +1,5 @@
 <?php 
-//Halaman pengelolaan pengembalian Buku Perustakaaan
+//Halaman pengelolaan pengembalian Buku Perpustakaaan
 require "../../config/config.php";
 $dataPeminjam = queryReadData("SELECT pengembalian.id_pengembalian, pengembalian.id_buku, buku.judul, buku.kategori, pengembalian.nisn, member.nama, member.kelas, member.jurusan, admin.nama_admin, pengembalian.buku_kembali, pengembalian.keterlambatan, pengembalian.denda
 FROM pengembalian
@@ -22,7 +22,7 @@ INNER JOIN admin ON pengembalian.id_admin = admin.id")
     <nav class="navbar fixed-top bg-body-tertiary shadow-sm">
       <div class="container-fluid p-3">
         <a class="navbar-brand" href="#">
-          <img src="../../assets/logoNav.png" alt="logo" width="120px">
+          <img src="../../Librarylogo.png" alt="logo" width="120px">
         </a>
         
         <a class="btn btn-tertiary" href="../dashboardAdmin.php">Dashboard</a>
@@ -76,13 +76,6 @@ INNER JOIN admin ON pengembalian.id_admin = admin.id")
   </div>
  </div>
 </div>
-    
-  <footer class="fixed-bottom shadow-lg bg-subtle p-3">
-      <div class="container-fluid d-flex justify-content-between">
-      <p class="mt-2">Created by <span class="text-primary"> Mangandaralam Sakti</span> © 2023</p>
-      <p class="mt-2">versi 1.0</p>
-      </div>
-    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

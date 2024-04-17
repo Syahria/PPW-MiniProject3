@@ -2,7 +2,7 @@
 session_start();
 
 if(!isset($_SESSION["signIn"]) ) {
-  header("Location: sign_in.php");
+  header("Location: ../../sign_in_member.php");
   exit;
 }
 require "../../config/config.php";

@@ -2,7 +2,7 @@
 session_start();
 
 if(!isset($_SESSION["signIn"]) ) {
-  header("Location: sign_in.php");
+  header("Location: sign_in_member.php");
   exit;
 }
 ?>
@@ -76,23 +76,23 @@ if(!isset($_SESSION["signIn"]) ) {
         <div class="d-flex flex-wrap justify-content-center gap-2">
         <div class="cardImg">
           <a href="buku/daftarBuku.php">
-            <img src="../assets/dashboardCardMember/daftarBuku.png" alt="daftar buku" style="max-width: 90%;" width="600px">
+            <img src="../assets/daftarBuku.png" alt="daftar buku" style="max-width: 90%;" width="600px">
           </a>
         </div>
         <div class="cardImg">
           <a href="formPeminjaman/TransaksiPeminjaman.php">
-          <img src="../assets/dashboardCardMember/peminjaman.png" alt="daftar buku" style="max-width: 90%;" width="600px">
+          <img src="../assets/peminjaman.png" alt="daftar buku" style="max-width: 90%;" width="600px">
           </a>
         </div>
 
         <div class="cardImg">
           <a href="formPeminjaman/TransaksiPengembalian.php">
-            <img src="../assets/dashboardCardMember/pengembalian.png" alt="daftar buku" style="max-width: 90%;" width="600px">
+            <img src="../assets/pengembalian.png" alt="daftar buku" style="max-width: 90%;" width="600px">
           </a>
         </div>
         <div class="cardImg">
           <a href="formPeminjaman/TransaksiDenda.php">
-          <img src="../assets/dashboardCardMember/denda.png" alt="daftar buku" style="max-width: 90%;" width="600px">
+          <img src="../assets/denda.png" alt="daftar buku" style="max-width: 90%;" width="600px">
           </a>
         </div>
        </div>

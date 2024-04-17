@@ -2,7 +2,7 @@
 session_start();
 
 if(!isset($_SESSION["signIn"]) ) {
-  header("Location: sign_in.php");
+  header("Location: sign_in_admin.php");
   exit;
 }
 
@@ -67,7 +67,7 @@ if(!isset($_SESSION["signIn"]) ) {
 
       <h1 class="mt-5 fw-bold">Dashboard - <span class="fs-4 text-secondary"> <?php echo $day. " ". $dayOfMonth." ". " ". $month. " ". $year; ?> </span></h1>
     
-      <div class="alert alert-success" role="alert">Selamat datang Admin - <span class="fw-bold text-capitalize"><?php echo $_SESSION['admin']['nama_admin']; ?></span> di Dashboard CuyPerpus</div>
+      <div class="alert alert-success" role="alert">Selamat datang Admin - <span class="fw-bold text-capitalize"><?php echo $_SESSION['admin']['nama_admin']; ?></span> di Dashboard</div>
       
       <div class="mt-4 p-3">
 
@@ -96,29 +96,29 @@ if(!isset($_SESSION["signIn"]) ) {
         <div class="d-flex flex-wrap justify-content-center gap-2">
         <div class="cardImg">
           <a href="member/member.php">
-            <img src="../assets/dashboardCardMember/member.png" alt="daftar buku" style="max-width: 100%;" width="600px">
+            <img src="../assets/member.png" alt="daftar buku" style="max-width: 100%;" width="600px">
           </a>
         </div>
         <div class="cardImg">
           <a href="buku/daftarBuku.php">
-          <img src="../assets/dashboardCardMember/bukuAdmin.png" alt="daftar buku" style="max-width: 100%;" width="600px">
+          <img src="../assets/bukuAdmin.png" alt="daftar buku" style="max-width: 100%;" width="600px">
           </a>
         </div>
 
         <div class="cardImg">
           <a href="peminjaman/peminjamanBuku.php">
-            <img src="../assets/dashboardCardMember/peminjaman.png" alt="daftar buku" style="max-width: 100%;" width="600px">
+            <img src="../assets/peminjaman.png" alt="daftar buku" style="max-width: 100%;" width="600px">
           </a>
         </div>
         <div class="cardImg">
           <a href="pengembalian/pengembalianBuku.php">
-          <img src="../assets/dashboardCardMember/pengembalianAdmin.png" alt="daftar buku" style="max-width: 100%;" width="600px">
+          <img src="../assets/pengembalianAdmin.png" alt="daftar buku" style="max-width: 100%;" width="600px">
           </a>
         </div>
       
          <div class="cardImg">
            <a href="denda/daftarDenda.php">
-           <img src="../assets/dashboardCardMember/denda.png" alt="daftar buku" style="max-width: 100%;" width="600px">
+           <img src="../assets/denda.png" alt="daftar buku" style="max-width: 100%;" width="600px">
            </a>
          </div>
         </div>

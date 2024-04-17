@@ -133,7 +133,7 @@ if(isset($_POST["signUp"]) ) {
     <button class="btn btn-primary" type="submit" name="signUp">Sign Up</button>
     <input type="reset" class="btn btn-warning text-light" value="Reset">
   </div>
-  <p>Already have an account? <a href="sign_in.php" class="text-decoration-none text-primary">Sign In</a></p>
+  <p>Already have an account? <a href="sign_in_member.php" class="text-decoration-none text-primary">Sign In</a></p>
 </form>
 </div>
   </div>
